@@ -20,5 +20,6 @@ for (const player of allPlayers) {
 
     e.target.setAttribute("disabled", true);
     e.target.style.backgroundColor = "gray";
+    e.target.innerText = "SELECTED";
   });
 }

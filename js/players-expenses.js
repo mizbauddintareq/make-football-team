@@ -8,7 +8,7 @@ document
     if (isNaN(perPlayerBudget) || perPlayerBudget < 0) {
       Swal.fire({
         icon: "error",
-        title: "Input only positive number",
+        title: "Input only valid number",
       });
       return;
     }
