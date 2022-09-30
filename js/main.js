@@ -6,7 +6,8 @@ for (const player of allPlayers) {
     const getPlayersList = document.getElementById("selected-player");
     const numbersOfPlayers = getPlayersList.childNodes.length;
 
-    if (numbersOfPlayers === 5) {
+    console.log(numbersOfPlayers);
+    if (numbersOfPlayers > 4) {
       Swal.fire({
         icon: "error",
         title: "Can't add more than five",
