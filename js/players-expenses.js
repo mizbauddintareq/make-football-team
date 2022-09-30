@@ -4,7 +4,7 @@ document
     const getPlayersList = document.getElementById("selected-player");
     const numbersOfPlayers = getPlayersList.childNodes.length;
 
-    const perPlayerBudget = getInputValue("player-bugdet");
+    const perPlayerBudget = getInputValue("player-budget");
     if (isNaN(perPlayerBudget) || perPlayerBudget < 0) {
       Swal.fire({
         icon: "error",
