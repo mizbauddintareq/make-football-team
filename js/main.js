@@ -22,15 +22,3 @@ for (const player of allPlayers) {
     e.target.style.backgroundColor = "gray";
   });
 }
-
-document
-  .getElementById("player-expenses-btn")
-  .addEventListener("click", function () {
-    const getPlayersList = document.getElementById("selected-player");
-    const numbersOfPlayers = getPlayersList.childNodes.length;
-
-    const perPlayerBudget = getInputValue("player-bugdet");
-
-    const totalPlayerBudget = perPlayerBudget * numbersOfPlayers;
-    setTextValue("player-expenses", totalPlayerBudget);
-  });
