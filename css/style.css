@@ -19,4 +19,9 @@ footer a {
   .header-title {
     font-size: 36px;
   }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
