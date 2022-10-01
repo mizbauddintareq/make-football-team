@@ -6,7 +6,14 @@ document
 
     const managerBudget = getInputValue("manager-budget");
     const coachBudget = getInputValue("coach-budget");
-    if (
+
+    if (isNaN(playersExpenses)) {
+      Swal.fire({
+        icon: "error",
+        title: "You should include Players expenses ",
+      });
+      return;
+    } else if (
       isNaN(managerBudget) ||
       isNaN(coachBudget) ||
       managerBudget < 0 ||
