@@ -10,6 +10,13 @@ body {
   font-weight: 400;
   font-size: 76px;
 }
+
 footer a {
   font-family: "Berkshire Swash", cursive;
+}
+
+@media only screen and (max-width: 688px) {
+  .header-title {
+    font-size: 36px;
+  }
 }
